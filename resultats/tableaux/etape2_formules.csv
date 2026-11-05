@@ -1,0 +1,2 @@
+feuille;variable;nb_formules;exemple
+PTF;Category;42605;=VLOOKUP(A57072,[1]Feuil1!$E$6:$G$99198,3,0)

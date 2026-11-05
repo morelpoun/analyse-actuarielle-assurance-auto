@@ -1,0 +1,21 @@
+table;variable;type_pandas;nature;nb_manquants;pct_manquants;nb_valeurs_distinctes;signification
+sinistres;nb_sin;int64;qualitative;0;0.0;7;Nombre de sinistres déclarés sur la police
+sinistres;chg_sin;float64;quantitative;0;0.0;12804;Coût total des sinistres (charge), en euros (hypothèse)
+sinistres;PolNum;int64;identifiant;0;0.0;13201;Identifiant de la police (clé de jointure)
+portefeuille;PolNum;int64;identifiant;0;0.0;100000;Identifiant de la police (clé de jointure)
+portefeuille;CalYear;int64;qualitative;0;0.0;2;Année calendaire de l'observation (2009 ou 2010)
+portefeuille;Gender;object;qualitative;5;0.0;5;"Sexe du conducteur ; codes mixtes Male/Female et H/F/h"
+portefeuille;Type;object;qualitative;0;0.0;6;Type de véhicule, codes A à F (hypothèse)
+portefeuille;Category;object;qualitative;0;0.0;4;Catégorie de taille (Small/Medium/Large), '???' = inconnu
+portefeuille;Occupation;object;qualitative;0;0.0;5;Catégorie socio-professionnelle du conducteur
+portefeuille;Age;int64;quantitative;0;0.0;61;Âge du conducteur en années (valeurs aberrantes présentes)
+portefeuille;Group1;int64;qualitative;0;0.0;20;Zone géographique, codes 4 à 20 (hypothèse)
+portefeuille;Bonus;int64;quantitative;0;0.0;21;Coefficient bonus-malus, de -50 à 150 (hypothèse)
+portefeuille;Poldur;int64;quantitative;0;0.0;25;Ancienneté de la police en années (valeurs négatives présentes)
+portefeuille;Value;object;qualitative;785;0.78;9383;"Valeur du véhicule en euros (hypothèse) ; valeurs manquantes et '??'"
+portefeuille;Adind;int64;qualitative;0;0.0;2;Indicateur binaire (0/1), signification à confirmer
+portefeuille;SubGroup2;object;qualitative;88429;88.41;471;Sous-groupe géographique, très peu renseigné (88 % de manquants)
+portefeuille;Group2;object;qualitative;0;0.0;10;Groupe géographique à 10 modalités (hypothèse)
+portefeuille;Density;object;qualitative;0;0.0;471;Densité de population de la zone (hypothèse)
+exposition;PolNum;int64;identifiant;0;0.0;100000;Identifiant de la police (clé de jointure)
+exposition;Expdays;int64;quantitative;0;0.0;275;Nombre de jours d'exposition au risque sur l'année (91 à 365)

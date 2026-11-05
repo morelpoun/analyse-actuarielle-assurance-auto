@@ -1,0 +1,9 @@
+table;variable;constat;nb_lignes;gravite;action
+sinistres;chg_sin;"Décimale en virgule (séparateur ';')";13140;Faible;Lire avec decimal=',' ou remplacer la virgule
+portefeuille;Density;Nombre stocké comme texte dans Excel;100027;Moyenne;Convertir en numérique à l'import
+portefeuille;Value;Montant stocké comme texte (code '??');1;Moyenne;Remplacer '??' par NA puis convertir
+portefeuille;Gender;Codes non normalisés (H, F, h);11;Moyenne;Recoder en Male / Female
+sinistres;PolNum;PolNum de longueur différente de 9 chiffres;0;Faible;Aucune si 0
+portefeuille;PolNum;PolNum de longueur différente de 9 chiffres;0;Faible;Aucune si 0
+exposition;PolNum;PolNum de longueur différente de 9 chiffres;0;Faible;Aucune si 0
+PTF;Category;Cellule contenant une formule (lien vers un classeur externe absent);42605;Élevée;Figer les valeurs après vérification, ou retirer le lien

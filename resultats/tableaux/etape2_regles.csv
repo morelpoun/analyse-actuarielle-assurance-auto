@@ -1,0 +1,14 @@
+categorie;table;variable;regle;nb_lignes;pct
+Impossible;portefeuille;Age;Âge inférieur à 18 ans (permis de conduire impossible);2;0.002
+Impossible;portefeuille;Age;Âge supérieur à 100 ans;1;0.001
+Impossible;portefeuille;Poldur;Ancienneté de police négative;2;0.002
+Incohérent;portefeuille;Poldur / Age;Ancienneté supérieure à l'âge du conducteur;3;0.003
+Suspect;portefeuille;Poldur / Age;Ancienneté > âge − 18 (à confirmer);10495;10.492
+Impossible;portefeuille;Value;Valeur du véhicule négative ou nulle;0;0.0
+Suspect;portefeuille;Value;Valeur du véhicule inférieure à 2 000 €;2300;2.299
+Impossible;exposition;Expdays;Exposition supérieure à 365 jours;0;0.0
+Impossible;exposition;Expdays;Exposition nulle ou négative;0;0.0
+Impossible;sinistres;chg_sin;Coût de sinistre négatif;0;0.0
+Suspect;sinistres;chg_sin;Coût nul malgré au moins un sinistre;21;0.158
+Impossible;sinistres;nb_sin;Nombre de sinistres nul ou négatif;0;0.0
+Impossible;portefeuille;Density;Densité de population nulle ou négative;0;0.0

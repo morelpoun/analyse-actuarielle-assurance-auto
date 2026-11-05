@@ -1,0 +1,26 @@
+etape;table;variable;action;nb_lignes;justification
+1. Doublons;sinistres;toutes;Suppression des lignes identiques;12;Ligne strictement identique à une autre : double saisie, aucune information ajoutée.
+1. Doublons;portefeuille;toutes;Suppression des lignes identiques;22;Ligne identique répétée : une police = une ligne.
+1. Doublons;portefeuille;PolNum 200114994;Conflit résolu : une ligne gardée;1;Même police, une ligne sans SubGroup2 : on garde la ligne complète.
+1. Doublons;portefeuille;PolNum 200115001;Conflit résolu : une ligne gardée;1;Même police, une ligne sans SubGroup2 : on garde la ligne complète.
+1. Doublons;portefeuille;PolNum 200115043;Conflit résolu : une ligne gardée;1;Même police, une ligne sans SubGroup2 : on garde la ligne complète.
+1. Doublons;portefeuille;PolNum 200115070;Conflit résolu : une ligne gardée;1;Même police, une ligne sans SubGroup2 : on garde la ligne complète.
+1. Doublons;portefeuille;PolNum 200115169;Conflit résolu : une ligne gardée;1;Conflit sur Poldur : on garde la valeur plausible (ancienneté ≤ âge − 18).
+1. Doublons;exposition;toutes;Suppression des lignes identiques;21;Ligne identique répétée : une police = une exposition.
+2. Formats;sinistres;chg_sin;Conversion en nombre (virgule décimale);13288;Le fichier utilise la virgule comme séparateur décimal.
+2. Formats;portefeuille;Density;Conversion texte vers nombre;100000;Densité stockée comme texte dans l'Excel.
+2. Formats;portefeuille;Value;Code '??' remplacé par manquant;1;Code textuel signalant une absence de valeur.
+2. Formats;portefeuille;Gender;Normalisation H/h -> Male, F -> Female;11;Hypothèse : H = homme, F = femme (codes français). À confirmer avec le producteur.
+2. Formats;portefeuille;Gender;Manquant renseigné « Inconnu »;5;Cinq polices sans sexe : pas d'imputation fiable.
+2. Formats;portefeuille;Category;Code '???' remplacé par « Inconnue »;29;Pas d'imputation fiable (0,03 % des lignes). Valeurs issues de formules conservées en cache.
+2. Formats;portefeuille;SubGroup2;Indicateur de renseignement créé;100000;88 % de valeurs manquantes : colonne conservée mais non imputée.
+3. Valeurs impossibles;portefeuille;Age;Âge > 100 ou < 18 remplacé par la médiane de la profession;3;Âge de 250 ans ou permis impossible à 16 ans : erreur de saisie. Imputation signalée.
+3. Valeurs impossibles;portefeuille;Poldur;Ancienneté négative remplacée par la médiane;2;Une ancienneté négative est impossible.
+3. Valeurs impossibles;portefeuille;Poldur;Signalement : ancienneté supérieure à l'âge (non modifiée);3;Cas peu nombreux, à confirmer avec le producteur.
+3. Valeurs manquantes;portefeuille;Value;Imputation par la médiane (type, catégorie);786;"Valeur manquante pour 0,8 % des polices. Médiane par groupe homogène ; imputation signalée."
+4. Valeurs aberrantes;portefeuille;Value;Signalement des valeurs au-delà du 99e centile (non modifiées);1000;Véhicule de forte valeur : réel, conservé.
+4. Valeurs aberrantes;portefeuille;Bonus;Aucune modification;100000;Coefficient bonus-malus dans une plage plausible (-50 à 150) : queue longue conservée.
+4. Valeurs aberrantes;sinistres;chg_sin;Signalement des coûts nuls (non modifiés);21;Sinistre déclaré sans coût : peut être un dossier clos sans paiement. À confirmer.
+4. Valeurs aberrantes;sinistres;chg_sin;Signalement des sinistres au-delà du 99e centile (non modifiés);133;Sinistre exceptionnel potentiellement réel : conservé. Pris en compte dans le coût total.
+4. Valeurs aberrantes;sinistres;chg_sin_plafonne_sensibilite;Variable de sensibilité créée (plafond au 99,5e centile);13288;Permet de mesurer l'impact des extrêmes. Non utilisée par défaut.
+5. Jointure;sinistres;PolNum;Sinistres sans police dans le portefeuille : conservés dans sinistres_nettoyes, exclus de la base;1011;Pas de caractéristiques de risque disponibles pour ces polices. À traiter séparément.

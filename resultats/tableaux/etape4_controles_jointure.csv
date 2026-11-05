@@ -1,0 +1,4 @@
+jointure;relation;lignes_gauche;lignes_droite;lignes_apres;correspondances;cles_sans_correspondance_gauche;cles_sans_correspondance_droite;doublons_generes;resultat
+Portefeuille ↔ Exposition;1 à 1;100000;100000;100000;100000;0;0.0;0;OK
+Sinistres → Polices;n à 1;13288;100000;13288;12277;945;;0;OK
+Polices ← Sinistres agrégés;1 à 0 ou 1;100000;13201;100000;12256;87744;945.0;0;OK

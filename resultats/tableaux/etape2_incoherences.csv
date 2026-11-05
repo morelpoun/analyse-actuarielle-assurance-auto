@@ -1,0 +1,7 @@
+regle;nb_lignes;pct
+Occupation « Retired » avec un âge inférieur à 50 ans;1734;1.734
+Occupation « Unemployed » avec un âge inférieur à 18 ans;1;0.001
+Occupation « Housewife » pour un conducteur de sexe masculin (Male, H ou h);12653;12.65
+Sous-groupe SubGroup2 incompatible avec Group2 (1re lettre différente);0;0.0
+Catégorie « Small » avec une valeur de véhicule supérieure à 40 000 €;0;0.0
+Catégorie « Large » avec une valeur de véhicule inférieure à 5 000 €;0;0.0

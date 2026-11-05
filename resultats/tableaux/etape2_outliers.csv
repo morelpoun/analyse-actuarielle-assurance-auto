@@ -1,0 +1,9 @@
+table;variable;Q1;mediane;Q3;borne_basse;borne_haute;nb_hors_bornes;pct_hors_bornes;max
+sinistres;nb_sin;1.0;1.0;1.0;1.0;1.0;2596;19.52;7.0
+sinistres;chg_sin;248.16;617.66;1361.99;-1422.57;3032.73;1146;8.62;12878.37
+portefeuille;Age;30.0;40.0;51.0;-1.5;82.5;1;0.0;250.0
+portefeuille;Bonus;-40.0;-30.0;10.0;-115.0;85.0;7460;7.46;150.0
+portefeuille;Poldur;1.0;4.0;9.0;-11.0;21.0;7;0.01;55.0
+portefeuille;Value_num;8375.0;14610.0;22575.0;-12925.0;43875.0;2672;2.69;49995.0
+portefeuille;Density;50.63;94.36;174.64;-135.4;360.67;0;0.0;297.39
+exposition;Expdays;340.0;365.0;365.0;302.5;402.5;21147;21.14;365.0

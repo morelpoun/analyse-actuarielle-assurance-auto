@@ -1,0 +1,14 @@
+table;variable;anomalie;nb_lignes;pct
+portefeuille;Gender;Codes non normalisés (H, F, h);11;0.011
+portefeuille;Gender;Valeur manquante;5;0.005
+portefeuille;Category;Modalité '???' (inconnue);29;0.029
+portefeuille;Value;Valeur manquante;785;0.785
+portefeuille;Value;Valeur non numérique '??';1;0.001
+portefeuille;Age;Âge < 18 ans;2;0.002
+portefeuille;Age;Âge > 100 ans (aberrant);1;0.001
+portefeuille;Poldur;Ancienneté négative;2;0.002
+portefeuille;Poldur;Ancienneté > âge du conducteur;3;0.003
+portefeuille;SubGroup2;Valeur manquante (taux élevé);88429;88.405
+exposition;Expdays;Exposition > 365 jours;0;0.0
+sinistres;chg_sin;Coût nul;21;0.158
+sinistres;PolNum;Police sans correspondance dans le portefeuille;1011;7.602

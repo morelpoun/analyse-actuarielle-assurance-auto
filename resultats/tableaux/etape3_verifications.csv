@@ -1,0 +1,15 @@
+controle;resultat;detail
+Une ligne par police dans la base;OK;100000 polices
+Pas de valeur manquante sur les champs clés;OK;PolNum, Age, Value, Expdays, Gender, Poldur
+Expdays entre 1 et 365;OK;min 91, max 365
+Âge entre 18 et 100 après nettoyage;OK;min 18, max 75
+Ancienneté positive ou nulle;OK;min 0
+Valeur du véhicule strictement positive;OK;min 1 000
+Aucun code textuel restant dans Category (hors « Inconnue »);OK;29 « Inconnue »
+Sexe normalisé;OK;Female, Inconnu, Male
+Fréquences positives ou nulles;OK;max 7.30
+Aucun sinistre perdu : total des nb_sin conservé;OK;14748 sinistres dans la base
+Coût total rapproché (base = sinistres nettoyés rattachés);OK;10 615 729.37 € dans la base
+Coût total rapproché (brut − doublons supprimés = nettoyé);OK;brut 15 613 646.72 − doublons 16 509.32 = nettoyé 15 597 137.40
+Aucun doublon de police dans l'exposition de la base;OK;contrôle d'unicité
+Sinistres hors portefeuille exclus et comptés;OK;945 polices, 1011 lignes exclues de la base

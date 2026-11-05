@@ -1,0 +1,17 @@
+variable;description;calcul
+expo_annees;Exposition en années (Expdays / 365);Dénominateur des fréquences
+nb_sinistres;Nombre total de sinistres de la police;Somme de nb_sin
+cout_total;Coût total des sinistres de la police;Somme de chg_sin
+a_sinistre;1 si la police a au moins un sinistre;Variable binaire
+frequence_annuelle;Nombre de sinistres par année d'exposition;nb_sinistres / expo_annees
+cout_moyen_par_sinistre;Coût moyen par sinistre;cout_total / nb_sinistres (si > 0)
+tranche_age;Tranche d'âge du conducteur;18-25, 26-35, 36-50, 51-65, 66+
+tranche_anciennete;Tranche d'ancienneté de la police;0-1, 2-4, 5-9, 10+ ans
+log_valeur;Logarithme de la valeur du véhicule;Pour les modèles multiplicatifs
+quartile_valeur;Quartile de valeur du véhicule;Q1 à Q4
+sexe_renseigne;1 si le sexe est renseigné;Indicateur de qualité
+nb_sinistres_extremes;Sinistres au-delà du 99e centile;Signalement, sans suppression
+subgroupe_renseigne;1 si SubGroup2 est renseigné;Indicateur de qualité
+age_imputee / poldur_imputee / value_imputee;1 si la valeur a été imputée;Traçabilité
+poldur_incoherente;1 si ancienneté > âge;Signalement
+categorie_source;formule_externe ou valeur;Traçabilité de la catégorie

@@ -1,0 +1,6 @@
+controle;ok;detail;resultat
+Coût total : base consolidée = sinistres rattachés;True;10 615 729.37 € = 10 615 729.37 €;OK
+Nombre de sinistres : base = sinistres rattachés;True;14748 sinistres;OK
+Lignes de sinistres : rattachées + non rattachées = total;True;12277 + 1011 = 13288;OK
+Une ligne par police dans la base consolidée;True;100000 polices;OK
+Aucun doublon généré par les jointures;True;contrôle sur les trois jointures;OK
